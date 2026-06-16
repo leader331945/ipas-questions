@@ -45,7 +45,7 @@
     "question": "深度學習（DL）使用什麼核心技術進行學習？",
     "options": ["決策樹", "多層神經網路", "線性迴歸", "規則引擎"],
     "answerIndex": 1,
-    "explanation": "深度學習使用多層神經網路（類似人腦神經元的連接結構）進行學習，是機器學習的子集。"
+    "explanation": "深度學習使用多層神經網路進行學習，是機器學習的子集。"
   },
   {
     "id": "ai_007",
@@ -53,7 +53,7 @@
     "question": "強 AI（AGI）目前的發展狀態為何？",
     "options": ["已在 ChatGPT 中實現", "部分實現於醫療診斷系統", "尚未真正實現，仍屬研究目標", "只存在於科幻小說中"],
     "answerIndex": 2,
-    "explanation": "強 AI（AGI，通用人工智慧）能夠跨領域學習、類似人類推理，目前仍屬研究目標，尚未真正實現。"
+    "explanation": "強 AI（AGI）目前仍屬研究目標，尚未真正實現。"
   },
   {
     "id": "ai_008",
@@ -61,7 +61,7 @@
     "question": "下列何者是「監督式學習」的特徵？",
     "options": ["訓練資料沒有標籤", "系統透過獎勵與懲罰學習", "訓練資料有明確的輸入與對應輸出標籤", "系統自行發現資料中的群集"],
     "answerIndex": 2,
-    "explanation": "監督式學習的訓練資料有明確的輸入和對應的正確輸出標籤，讓模型學習兩者之間的對應關係。"
+    "explanation": "監督式學習的訓練資料有明確的輸入和對應的正確輸出標籤。"
   },
   {
     "id": "ai_009",
@@ -69,7 +69,7 @@
     "question": "非監督式學習最常見的應用場景為何？",
     "options": ["圖片分類（有標籤）", "客戶分群（無標籤）", "語音辨識", "垃圾郵件偵測"],
     "answerIndex": 1,
-    "explanation": "非監督式學習在沒有標籤的情況下，自行找出資料中的群集或模式，常用於客戶分群、異常偵測等。"
+    "explanation": "非監督式學習在沒有標籤的情況下，自行找出資料中的群集或模式，常用於客戶分群。"
   },
   {
     "id": "ai_010",
@@ -85,7 +85,7 @@
     "question": "過擬合（Overfitting）指的是什麼現象？",
     "options": ["模型在訓練集和測試集都表現不佳", "模型在訓練集表現很好，但在新資料上表現差", "模型訓練速度太慢", "模型使用了太少的訓練資料"],
     "answerIndex": 1,
-    "explanation": "過擬合是指模型過度學習訓練資料的細節和雜訊，導致在新資料上泛化能力不足。可透過正則化、增加資料量等方式改善。"
+    "explanation": "過擬合是指模型過度學習訓練資料的細節，導致在新資料上泛化能力不足。"
   },
   {
     "id": "ml_002",
@@ -115,9 +115,9 @@
     "id": "ml_005",
     "category": "機器學習",
     "question": "特徵工程（Feature Engineering）指的是什麼？",
-    "options": ["設計神經網路的層數和神經元數量", "從原始資料中萃取、轉換、選擇對模型有用的特徵", "調整模型的學習率", "選擇適合的演算法"],
+    "options": ["設計神經網路的層數", "從原始資料中萃取、轉換、選擇對模型有用的特徵", "調整模型的學習率", "選擇適合的演算法"],
     "answerIndex": 1,
-    "explanation": "特徵工程是從原始資料中萃取、轉換、創造和選擇對模型預測有幫助的特徵，是機器學習中非常重要的步驟。"
+    "explanation": "特徵工程是從原始資料中萃取、轉換、創造和選擇對模型預測有幫助的特徵。"
   },
   {
     "id": "ml_006",
@@ -128,20 +128,52 @@
     "explanation": "資料漂移指的是模型部署後，現實世界的資料分佈逐漸改變，導致模型預測準確率下降。"
   },
   {
+    "id": "ml_007",
+    "category": "機器學習",
+    "question": "Q-Learning 最適合應用在哪種情境？",
+    "options": ["影像分類", "有限狀態的強化學習任務（如棋盤遊戲）", "文字生成", "客戶分群"],
+    "answerIndex": 1,
+    "explanation": "Q-Learning 使用 Q 表記錄狀態-行動的價值，適合有限狀態空間的強化學習任務。"
+  },
+  {
+    "id": "ml_008",
+    "category": "機器學習",
+    "question": "DQN（Deep Q-Learning）相較於傳統 Q-Learning 的主要改進為何？",
+    "options": ["使用神經網路取代 Q 表，適合高維度狀態空間", "訓練速度更快", "不需要獎勵機制", "只能用於遊戲場景"],
+    "answerIndex": 0,
+    "explanation": "DQN 用神經網路取代 Q 表，可以處理影像等高維度狀態空間。"
+  },
+  {
+    "id": "ml_009",
+    "category": "機器學習",
+    "question": "知識蒸餾（Knowledge Distillation）的主要目的為何？",
+    "options": ["將大型模型的知識壓縮到較小的模型中", "增加模型的訓練資料", "提升模型的準確率", "讓模型可以處理多種語言"],
+    "answerIndex": 0,
+    "explanation": "知識蒸餾讓小模型學習大模型的輸出分佈，在維持一定效能的同時大幅縮小模型體積。"
+  },
+  {
+    "id": "ml_010",
+    "category": "機器學習",
+    "question": "LoRA（Low-Rank Adaptation）主要用於解決什麼問題？",
+    "options": ["提升模型推理速度", "以低成本對大型語言模型進行微調", "增加模型的訓練資料量", "解決資料不平衡問題"],
+    "answerIndex": 1,
+    "explanation": "LoRA 透過只訓練少量額外參數，以低成本對大型語言模型進行任務微調。"
+  },
+  {
     "id": "eval_001",
     "category": "模型評估",
     "question": "MAE（平均絕對誤差）與 RMSE（均方根誤差）最大的差異為何？",
     "options": ["MAE 計算速度較快", "RMSE 對大誤差更敏感，MAE 對所有誤差一視同仁", "MAE 適合分類問題，RMSE 適合迴歸問題", "RMSE 數值一定比 MAE 小"],
     "answerIndex": 1,
-    "explanation": "RMSE 對大誤差特別敏感，適合大錯代價高的場景。MAE 對所有誤差一視同仁。記住：怕大錯看 RMSE，求平均看 MAE。"
+    "explanation": "RMSE 對大誤差特別敏感，適合大錯代價高的場景。記住：怕大錯看 RMSE，求平均看 MAE。"
   },
   {
     "id": "eval_002",
     "category": "模型評估",
-    "question": "某醫療 AI 模型預測癌症，最怕「把有癌症的人預測為正常」，應優先關注哪個指標？",
+    "question": "某醫療 AI 模型最怕「把有癌症的人預測為正常」，應優先關注哪個指標？",
     "options": ["Accuracy（準確率）", "Precision（精確率）", "Recall（召回率）", "F1-score"],
     "answerIndex": 2,
-    "explanation": "召回率（Recall）衡量所有實際正例中被正確預測出來的比例。醫療場景最怕漏掉真實病患，所以優先關注召回率。"
+    "explanation": "召回率（Recall）衡量所有實際正例中被正確預測出來的比例。醫療場景最怕漏掉真實病患。"
   },
   {
     "id": "eval_003",
@@ -149,7 +181,7 @@
     "question": "AI Benchmark 的核心目的為何？",
     "options": ["決定 AI 產品的定價", "量化比較不同 AI 模型在特定能力上的表現", "測試 AI 系統的硬體效能", "評估 AI 開發者的技術能力"],
     "answerIndex": 1,
-    "explanation": "Benchmark 是標準化測試，用來量化比較不同 AI 模型在特定能力上的表現，提供客觀的選型依據。"
+    "explanation": "Benchmark 是標準化測試，用來量化比較不同 AI 模型在特定能力上的表現。"
   },
   {
     "id": "eval_004",
@@ -157,7 +189,39 @@
     "question": "F1-score 是哪兩個指標的調和平均數？",
     "options": ["Accuracy 和 Recall", "Precision 和 Recall", "MAE 和 RMSE", "Precision 和 Accuracy"],
     "answerIndex": 1,
-    "explanation": "F1-score 是 Precision（精確率）和 Recall（召回率）的調和平均數，在兩者需要同時兼顧時使用。"
+    "explanation": "F1-score 是 Precision（精確率）和 Recall（召回率）的調和平均數。"
+  },
+  {
+    "id": "eval_005",
+    "category": "模型評估",
+    "question": "混淆矩陣中，True Positive（TP）代表什麼？",
+    "options": ["實際為負例，預測為正例", "實際為正例，預測為負例", "實際為正例，預測也為正例", "實際為負例，預測也為負例"],
+    "answerIndex": 2,
+    "explanation": "True Positive（TP）= 實際是正例，模型預測也是正例，是模型「猜對了正例」的數量。"
+  },
+  {
+    "id": "eval_006",
+    "category": "模型評估",
+    "question": "ROC 曲線下面積（AUC）數值越接近 1.0，代表什麼？",
+    "options": ["模型表現越差", "模型表現越好，區分正負例的能力越強", "模型發生過擬合", "模型訓練時間越長"],
+    "answerIndex": 1,
+    "explanation": "AUC 越接近 1.0，代表模型區分正例和負例的能力越強。AUC = 0.5 等同於隨機猜測。"
+  },
+  {
+    "id": "eval_007",
+    "category": "模型評估",
+    "question": "當 MAE 相近但 RMSE 明顯較高時，代表什麼？",
+    "options": ["模型整體表現良好", "模型存在偶發性的大誤差", "訓練資料不足", "模型發生過擬合"],
+    "answerIndex": 1,
+    "explanation": "RMSE 對大誤差特別敏感。若 MAE 相近但 RMSE 明顯較高，代表模型偶爾會產生很大的誤差。"
+  },
+  {
+    "id": "eval_008",
+    "category": "模型評估",
+    "question": "TruthfulQA 這個 Benchmark 主要測試 AI 的哪項能力？",
+    "options": ["程式生成能力", "數學推理能力", "回答的真實性，檢驗是否容易產生幻覺", "多語言理解能力"],
+    "answerIndex": 2,
+    "explanation": "TruthfulQA 測試模型回答的真實性，檢驗模型是否會產生幻覺或給出錯誤但聽起來合理的答案。"
   },
   {
     "id": "data_001",
@@ -173,7 +237,7 @@
     "question": "ETL 流程中，「Transform（轉換）」包含哪些工作？",
     "options": ["從資料來源取得資料", "將處理後的資料載入目標系統", "清洗、整理、格式轉換、去重複、標準化等資料處理工作", "設計資料庫的結構"],
     "answerIndex": 2,
-    "explanation": "ETL 的 Transform 包含清洗資料、處理缺失值、格式轉換、去重複、標準化等所有資料前處理工作。記住：先抓→再洗→再放進去。"
+    "explanation": "ETL 的 Transform 包含清洗資料、處理缺失值、格式轉換等所有資料前處理工作。記住：先抓→再洗→再放進去。"
   },
   {
     "id": "data_003",
@@ -181,7 +245,7 @@
     "question": "下列何者屬於「非結構化資料」？",
     "options": ["Excel 表格", "JSON 檔案", "關聯式資料庫", "圖片、影片、音訊"],
     "answerIndex": 3,
-    "explanation": "非結構化資料沒有固定欄位格式，包括圖片、影片、音訊、純文字等。Excel 和資料庫是結構化資料，JSON 是半結構化資料。"
+    "explanation": "非結構化資料沒有固定欄位格式，包括圖片、影片、音訊、純文字等。"
   },
   {
     "id": "data_004",
@@ -189,7 +253,39 @@
     "question": "匿名化（Anonymization）與假名化（Pseudonymization）最主要的差異為何？",
     "options": ["匿名化速度較快", "匿名化破壞身份連結且不可還原；假名化用代號取代真名，但有對照表可還原", "假名化保護效果較強", "兩者完全相同"],
     "answerIndex": 1,
-    "explanation": "匿名化完全破壞個人身份連結，不可還原，適合對外公開資料。假名化用代號取代真名，但保留對照表可以還原。"
+    "explanation": "匿名化完全破壞個人身份連結，不可還原。假名化用代號取代真名，但保留對照表可以還原。"
+  },
+  {
+    "id": "data_005",
+    "category": "資料處理",
+    "question": "差分隱私（Differential Privacy）的核心做法為何？",
+    "options": ["移除個人姓名和身份證號", "加入隨機雜訊保護個人資料，同時保留整體統計趨勢", "用代號取代真實姓名", "加密所有個人資料"],
+    "answerIndex": 1,
+    "explanation": "差分隱私透過在資料中加入精心設計的隨機雜訊，使得無法從結果中推斷出個人資訊。"
+  },
+  {
+    "id": "data_006",
+    "category": "資料處理",
+    "question": "資料治理（Data Governance）的核心目標為何？",
+    "options": ["提升資料處理速度", "確保資料能被安全、正確、合規地使用", "增加資料儲存容量", "降低雲端費用"],
+    "answerIndex": 1,
+    "explanation": "資料治理的核心目標是確保資料品質、安全、隱私、權限控管、可追蹤性和合規性。"
+  },
+  {
+    "id": "data_007",
+    "category": "資料處理",
+    "question": "JSON 屬於哪種類型的資料？",
+    "options": ["結構化資料", "半結構化資料", "非結構化資料", "原始資料"],
+    "answerIndex": 1,
+    "explanation": "JSON 有部分格式規範，但不完全固定，屬於半結構化資料。其他半結構化資料還有 XML、Log 檔等。"
+  },
+  {
+    "id": "data_008",
+    "category": "資料處理",
+    "question": "資料品質的核心要素不包含下列哪項？",
+    "options": ["正確性", "完整性", "一致性", "處理速度"],
+    "answerIndex": 3,
+    "explanation": "資料品質的核心要素包括：正確性、完整性、一致性、即時性等。處理速度是系統效能指標，不是資料品質要素。"
   },
   {
     "id": "plan_001",
@@ -197,7 +293,7 @@
     "question": "RAG（Retrieval-Augmented Generation）解決了 LLM 的什麼問題？",
     "options": ["模型訓練速度太慢", "知識截止日期問題，讓模型能引用最新外部資料回答問題", "模型參數量太大", "多語言支援不足"],
     "answerIndex": 1,
-    "explanation": "RAG 讓 LLM 在生成回答前先從外部知識庫檢索相關資料，解決模型知識有截止日期的問題，並降低幻覺發生率。"
+    "explanation": "RAG 讓 LLM 在生成回答前先從外部知識庫檢索相關資料，解決模型知識有截止日期的問題。"
   },
   {
     "id": "plan_002",
@@ -205,31 +301,55 @@
     "question": "Few-Shot Prompting 的核心設計原則為何？",
     "options": ["不提供任何範例，讓模型自由發揮", "提供少量輸入輸出範例，讓模型學習期望的格式和風格", "提供大量範例（超過 100 個）", "只提供任務說明，不提供範例"],
     "answerIndex": 1,
-    "explanation": "Few-Shot Prompting 提供少量（通常 2-5 個）輸入輸出範例，讓模型學習期望的回覆格式和風格。口訣：給例子 = Few-Shot。"
+    "explanation": "Few-Shot Prompting 提供少量範例，讓模型學習期望的回覆格式和風格。口訣：給例子 = Few-Shot。"
   },
   {
     "id": "plan_003",
     "category": "AI 應用規劃",
     "question": "PoC（概念驗證）與 MVP（最小可行產品）的主要差異為何？",
-    "options": ["PoC 需要讓真實用戶使用，MVP 不需要", "PoC 驗證技術可行性（不對外），MVP 是最小功能的可上線產品", "PoC 花費比 MVP 高", "兩者完全相同，只是叫法不同"],
+    "options": ["PoC 需要讓真實用戶使用，MVP 不需要", "PoC 驗證技術可行性（不對外），MVP 是最小功能的可上線產品", "PoC 花費比 MVP 高", "兩者完全相同"],
     "answerIndex": 1,
-    "explanation": "PoC 在封閉環境驗證技術能不能做到，通常不對外開放。MVP 是最小可行功能的正式產品，讓真實用戶使用並收集回饋。記住：PoC 先試水，MVP 先上線。"
+    "explanation": "PoC 在封閉環境驗證技術能不能做到。MVP 是最小可行功能的正式產品，讓真實用戶使用。記住：PoC 先試水，MVP 先上線。"
   },
   {
     "id": "plan_004",
     "category": "AI 應用規劃",
-    "question": "Temperature 參數設定為 0.2（低溫）時，AI 生成的內容特性為何？",
-    "options": ["內容更有創意、更多樣化", "內容更穩定一致、較少隨機性", "回應速度更快", "使用更多 Token"],
-    "answerIndex": 1,
-    "explanation": "低 Temperature（接近 0）讓模型輸出更穩定、確定性高，適合需要準確答案的場景。高 Temperature 讓輸出更有創意但可能不穩定。"
+    "question": "AI Agent 的核心能力不包含下列哪項？",
+    "options": ["感知環境", "自主決策與執行", "學習與協作", "替換人類所有工作"],
+    "answerIndex": 3,
+    "explanation": "AI Agent 的核心能力包括感知、推理與決策、執行、學習、協作，但 Agent 的設計目標是完成特定任務，而非替換人類所有工作。"
   },
   {
     "id": "plan_005",
     "category": "AI 應用規劃",
+    "question": "Temperature 參數設定為 0.2（低溫）時，AI 生成的內容特性為何？",
+    "options": ["內容更有創意、更多樣化", "內容更穩定一致、較少隨機性", "回應速度更快", "使用更多 Token"],
+    "answerIndex": 1,
+    "explanation": "低 Temperature 讓模型輸出更穩定、確定性高，適合需要準確答案的場景。高 Temperature 讓輸出更有創意但可能不穩定。"
+  },
+  {
+    "id": "plan_006",
+    "category": "AI 應用規劃",
     "question": "Chain-of-Thought（CoT）Prompting 的主要優點為何？",
     "options": ["減少 Token 使用量", "讓模型逐步展示推理過程，提升複雜問題的準確率", "加快模型推理速度", "讓模型可以處理更長的文本"],
     "answerIndex": 1,
-    "explanation": "CoT 讓模型在回答前先逐步列出推理過程，特別適合數學題、邏輯推理等需要多步驟思考的問題，能顯著提升準確率。"
+    "explanation": "CoT 讓模型在回答前先逐步列出推理過程，特別適合數學題、邏輯推理等需要多步驟思考的問題。"
+  },
+  {
+    "id": "plan_007",
+    "category": "AI 應用規劃",
+    "question": "MCP（Model Context Protocol）的主要功能為何？",
+    "options": ["提升模型訓練速度", "讓 AI 能夠連接並操作外部工具和資料來源", "壓縮模型體積", "解決多語言翻譯問題"],
+    "answerIndex": 1,
+    "explanation": "MCP 讓 AI 能夠查詢資料庫、呼叫 API 等外部工具，擴展 AI 的能力範圍。"
+  },
+  {
+    "id": "plan_008",
+    "category": "AI 應用規劃",
+    "question": "AI 導入企業時，ROI 評估應考量哪些面向？",
+    "options": ["只考量硬體採購成本", "成本節省、效率提升、收益增加、風險降低等多個面向", "只看準確率是否達到 95% 以上", "只考量 AI 模型的參數量"],
+    "answerIndex": 1,
+    "explanation": "AI 導入的 ROI 評估需要綜合考量：直接成本節省、人力效率提升、新增收益、風險降低等多個面向。"
   },
   {
     "id": "eth_001",
@@ -237,22 +357,46 @@
     "question": "AI 倫理七大原則中，「可解釋性」的具體意義為何？",
     "options": ["AI 系統的程式碼必須開源", "AI 重要決策應能說明理由，讓使用者理解決策過程", "AI 系統的訓練資料必須公開", "AI 開發者必須說明商業模式"],
     "answerIndex": 1,
-    "explanation": "可解釋性（Explainability）要求 AI 系統的重要決策應能提供說明，讓受影響的人理解決策的理由和依據。記憶口訣：公透解責隱安監。"
+    "explanation": "可解釋性要求 AI 系統的重要決策應能提供說明，讓受影響的人理解決策的理由。記憶口訣：公透解責隱安監。"
   },
   {
     "id": "eth_002",
     "category": "AI 倫理",
-    "question": "AI 問責性（Accountability）的核心要求為何？",
-    "options": ["AI 系統必須完全自主運作", "AI 出現錯誤或造成傷害時，必須有人或組織負責", "AI 開發成本需公開透明", "AI 模型必須通過第三方認證"],
+    "question": "演算法公平性中，「人口統計均等」指的是什麼？",
+    "options": ["所有人獲得相同的預測結果", "不同群體獲得正向預測結果的比例應相同", "AI 模型對所有語言表現一致", "訓練資料中各群體數量相同"],
     "answerIndex": 1,
-    "explanation": "問責性要求當 AI 系統出現錯誤、偏見或造成傷害時，必須有明確的人或組織負責，並提供申訴和補救的機制。"
+    "explanation": "人口統計均等要求不同群體獲得正向預測結果的比例應相同，以避免系統性歧視。"
   },
   {
     "id": "eth_003",
+    "category": "AI 倫理",
+    "question": "AI 問責性（Accountability）的核心要求為何？",
+    "options": ["AI 系統必須完全自主運作", "AI 出現錯誤或造成傷害時，必須有人或組織負責", "AI 開發成本需公開透明", "AI 模型必須通過第三方認證"],
+    "answerIndex": 1,
+    "explanation": "問責性要求當 AI 系統出現錯誤或造成傷害時，必須有明確的人或組織負責。"
+  },
+  {
+    "id": "eth_004",
     "category": "AI 倫理",
     "question": "台灣《人工智慧基本法》於何時正式生效？",
     "options": ["2024年1月", "2025年7月", "2026年1月14日", "2026年6月"],
     "answerIndex": 2,
     "explanation": "台灣《人工智慧基本法》於2025年底通過，2026年1月14日正式生效，是台灣 AI 治理的重要里程碑。"
+  },
+  {
+    "id": "eth_005",
+    "category": "AI 倫理",
+    "question": "歐盟 AI 法案（EU AI Act）對高風險 AI 的要求為何？",
+    "options": ["完全禁止使用", "需符合合規性要求、文件記錄、人類監督等嚴格規範", "只需申報即可使用", "需繳納高額稅金"],
+    "answerIndex": 1,
+    "explanation": "歐盟 AI 法案將 AI 分為四個等級。高風險 AI 需符合嚴格的合規要求，包括文件記錄、透明度、人類監督等。"
+  },
+  {
+    "id": "eth_006",
+    "category": "AI 倫理",
+    "question": "PDCA 循環在 AI 治理中的應用，「C」代表什麼？",
+    "options": ["Create（創建）", "Check（查核）", "Control（控制）", "Collect（收集）"],
+    "answerIndex": 1,
+    "explanation": "PDCA 循環：Plan（規劃）→ Do（實施）→ Check（查核）→ Act（改善），是 ISO/IEC 42001 AI 管理系統的核心框架。"
   }
 ]
